@@ -15,5 +15,7 @@ public class MultiplicationTable{
         System.out.println(number + " X 8 = " + number*8);
         System.out.println(number + " X 9 = " + number*9);
         System.out.println(number + " X 10 = " + number*10);
+
+        input.close();
     }
 }

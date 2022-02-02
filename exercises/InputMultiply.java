@@ -7,5 +7,7 @@ public class InputMultiply{
         System.out.print("Input second number: ");
         int second = input.nextInt();
         System.out.println(first + "X" + second + "=" + first * second);
+
+        input.close();
     }
 }
