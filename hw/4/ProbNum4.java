@@ -26,26 +26,3 @@ public class ProbNum4 {
       System.out.println("sqrt(" + integer + ") is sqrt(" + integer + ")"); 
   }
 }
-      //double firstNum = 1;
-      //double secondNum = 0;
-      //if ((Math.sqrt(integer) - Math.floor(Math.sqrt(in}teger)) == 0))){
-        //System.out.println("sqrt(" + integer + ") is " + Math.sqrt(integer));
-        //break;
-      //}
-     // else if ((integer % i == 0) && (Math.sqrt(integer) - Math.floor(Math.sqrt(integer)) == 0)){
-       // if (!(Math.sqrt(i)/100)){
-         // firstNum = Math.sqrt(i);
-          //secondNum = integer/i;
-          //System.out.println("sqrt(" + integer + ") is " + firstNum + "*sqrt(" + secondNum + ")");
-          //break;
-        //}
-        //else{
-          //firstNum = i;
-          //secondNum = Math.sqrt(integer/i);
-          //System.out.println("sqrt(" + integer + ") is " + firstNum + "*sqrt(" + secondNum + ")");
-          //break;
-        //}
-      //}       
-    //}
-
-    
