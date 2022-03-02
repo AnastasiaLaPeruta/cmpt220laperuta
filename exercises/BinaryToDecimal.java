@@ -10,8 +10,8 @@ public class BinaryToDecimal{
     public static int binaryToDecimal(String binaryString){
         int number = 0;
         for (int i = 0; i < binaryString.length(); i++){
-          if (binaryString.charAt(i) == 1)
-            number = number + Math.pow(2,binaryString.length() - binaryString.charAt(i));
+          //if (binaryString.charAt(i) == 1)
+            //number = number + Math.pow(2,binaryString.length() - binaryString.charAt(i));
         }
         return number;
     }
