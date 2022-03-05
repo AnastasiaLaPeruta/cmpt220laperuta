@@ -2,10 +2,11 @@
     "java.project.sourcePaths": [
         "prj/1",
         "hw/6",
+        "hw/4",
         "hw/3",
         "hw/2",
         "hw/1",
         "exercises",
-        "hw/4"
+        "hw/5"
     ]
 }
