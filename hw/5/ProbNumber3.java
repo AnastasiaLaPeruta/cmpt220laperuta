@@ -10,7 +10,7 @@ public class ProbNumber3 {
     public static String title(String s){
         String[] splitUp = s.split(" ");
         for (int i = 0; i < splitUp.length; i++)
-          splitUp[i] = splitUp[i].substring(0,1).toUpperCase();
+          splitUp[i].substring(0,1) = splitUp[i].substring(0,1).toUpperCase();
         String title = "";
         for (int i = 0; i < splitUp.length; i++){
             title = title + " " + splitUp[i];
