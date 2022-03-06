@@ -7,6 +7,8 @@ public class ProbNumber2 {
         input.close();
         System.out.print("The binary value is " + decimalToBinary(number));
     }
+
+    // JA: This will not create the sring
     public static String decimalToBinary(int value){
       int placeHolder = 1;
       int currentValue = 1;
