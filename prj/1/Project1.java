@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// JA: Comments?
 public class Project1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
