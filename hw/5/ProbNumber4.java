@@ -7,6 +7,7 @@ public class ProbNumber4 {
         input.close();
         System.out.print("The hours, minutes, and seconds for total seconds " + sec + " is " + format(sec));
     }
+    // JA: Output format is missing the leading 0 when les than 10
     public static String format(long seconds){
       long hours = (seconds / 3600) % 24;
       long minutes = (seconds % 3600) / 60;
