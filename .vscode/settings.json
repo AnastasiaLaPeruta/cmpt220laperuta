@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "prj/2",
         "prj/1",
         "hw/6",
         "hw/5",
@@ -8,6 +9,6 @@
         "hw/2",
         "hw/1",
         "exercises",
-        "prj/2"
+        "hw/7"
     ]
 }
