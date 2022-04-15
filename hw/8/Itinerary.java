@@ -1,17 +1,17 @@
-import java.util.ArrayList;
 import java.util.List;
 public class Itinerary extends Flight{
   //data field
   private List<Flight> flights;
-  //constructor
+  //constructors
+  Itinerary(){
+  }
   Itinerary(List<Flight> flights){
     this.flights = flights;
   }
-  public long getTotalTravelTime(){
+  public long getTotalTime(){
     //converts the times to minutes
-    long arrivalMinutes = (flights.get(flights.size()-1)).get(arrivalTime.HOUR_OF_DAY) * 60 + (flights.get(flights.size()-1)).get(arrivalTime.MINUTE);
-    long departureMinutes = (flights.get(0)).get(departureTime.HOUR_OF_DAY) * 60 + (flights.get(0)).get(departureTime.MINUTE);
-    return  arrivalMinutes - departureMinutes;
+    return (flights.get(flights.size()-1).getArrivalTime().getTimeInMillis() - 
+      flights.get(0).getDepartureTime().getTimeInMillis())/60000;
 }
   //returns total minutes in air
   public long getTotalFlightTime(){
