@@ -1,5 +1,14 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+// JA: It seems to make a mistake sometimes:
+// Try this:
+// Enter the number of objects: 10               
+// Enter the weights of the objects: 2 4 3 2 1 6 3 7 8 9
+// Container 1 contains objects with weight 9 1 
+// Container 2 contains objects with weight 8 2
+// Container 3 contains objects with weight 7 3
+// Container 4 contains objects with weight 6 4
+// Container 5 contains objects with weight 3 2
 public class Prb2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
