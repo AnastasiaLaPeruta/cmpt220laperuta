@@ -11,7 +11,8 @@
         "hw/2",
         "hw/1",
         "exercises",
-        "hw/8"
+        "hw/8",
+        "hw\\9"
     ],
     "files.autoGuessEncoding": true
 }
