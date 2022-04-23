@@ -3,6 +3,8 @@
         "prj/3",
         "prj/2",
         "prj/1",
+        "hw/9",
+        "hw/8",
         "hw/7",
         "hw/6",
         "hw/5",
@@ -11,8 +13,7 @@
         "hw/2",
         "hw/1",
         "exercises",
-        "hw/8",
-        "hw\\9"
+        "prj/4"
     ],
     "files.autoGuessEncoding": true
 }
