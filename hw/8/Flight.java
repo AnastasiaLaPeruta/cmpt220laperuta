@@ -4,7 +4,9 @@ public class Flight {
   private String flightNo;
   private GregorianCalendar departureTime;
   private GregorianCalendar arrivalTime;
-  //constructor
+  //constructors
+  Flight(){
+  }
   Flight(String flightNo, GregorianCalendar departureTime, GregorianCalendar arrivalTime){
     this.flightNo = flightNo;
     this.departureTime = departureTime;
@@ -29,9 +31,6 @@ public class Flight {
   //method that returns flight time in minutes
   public long getFlightTime(){
     //converts the times to minutes
-    long arrivalMinutes = arrivalTime.get(arrivalTime.HOUR_OF_DAY) * 60 + arrivalTime.get(arrivalTime.MINUTE);
-    long departureMinutes = departureTime.get(departureTime.HOUR_OF_DAY) * 60 + departureTime.get(departureTime.MINUTE);
-    //returns the difference in minutes
-    return arrivalTime - departureTime;
+    return (long)(arrivalTime.getTimeInMillis() - departureTime.getTimeInMillis())/60000;
   }
 }
