@@ -13,7 +13,8 @@
         "hw/2",
         "hw/1",
         "exercises",
-        "prj/4"
+        "prj/4",
+        "hw\\10"
     ],
     "files.autoGuessEncoding": true
 }
