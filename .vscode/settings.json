@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "java.project.sourcePaths": [
         "prj/3",
@@ -18,4 +19,25 @@
         "prj\\5"
     ],
     "files.autoGuessEncoding": true
+=======
+{
+    "java.project.sourcePaths": [
+        "prj/3",
+        "prj/2",
+        "prj/1",
+        "hw/9",
+        "hw/8",
+        "hw/7",
+        "hw/6",
+        "hw/5",
+        "hw/4",
+        "hw/3",
+        "hw/2",
+        "hw/1",
+        "exercises",
+        "prj/4",
+        "hw\\10"
+    ],
+    "files.autoGuessEncoding": true
+>>>>>>> a85cabcf2e139972d58618ddb702e88db4945642
 }

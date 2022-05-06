@@ -94,6 +94,7 @@ class BabyName{
     this.ranking = ranking;
   }
   //method that loads the names from the correct file
+  // JA: This should not be part of the BabyName class
   protected ArrayList<String> loadNames(String fileName){
     //creates an ArrayList that will store names
     ArrayList<String> names = new ArrayList<>(); 
