@@ -1,4 +1,4 @@
-public class Complex extends Number{
+public class Complex extends Number implements Cloneable, Comparable<Complex>{
   //data fields
   private double a;
   private double b;
@@ -12,8 +12,8 @@ public class Complex extends Number{
     this.b = b;
   }
   Complex(double a){
-  this.a = a;
-  b = 0;
+    this.a = a;
+    b = 0;
   }
 
   //getters and setters
@@ -41,13 +41,70 @@ public class Complex extends Number{
     double second = firstCom.getB() - secondCom.getB();
     return new Complex(first,second);
   }
-  //return the real part of a complex number
-  public static double getRealPart() {
-  
+  //multiplies the complex numbers
+  public static Complex multiply(Complex firstCom, Complex secondCom){
+    double first = (firstCom.getA()*secondCom.getA())-(firstCom.getB()*secondCom.getB());
+    double second = (firstCom.getB()*secondCom.getA())+(firstCom.getA()*secondCom.getB());
+    return new Complex(first,second);
   }
-  //implements these because they are abstract in parent class
-  public abstract int intValue(){
-    return (int) num;
+  //divides the complex numbers
+  public static Complex divide(Complex firstCom, Complex secondCom){
+    double first = ((firstCom.getA()*secondCom.getA()+firstCom.getB()*secondCom.getB())/(secondCom.getA()*secondCom.getA()+secondCom.getB()*secondCom.getB()));
+    double second = ((firstCom.getB()*secondCom.getA()-firstCom.getA()*secondCom.getB())/(secondCom.getA()*secondCom.getA()+secondCom.getB()*secondCom.getB()));
+    return new Complex(first,second);
+  }
+  //gets the absolute value of a complex number
+  public static double abs(Complex num){
+    return Math.sqrt(num.getA()*num.getA()+num.getB()*num.getB());
+  }
+  //return the real part of a complex number
+  public double getRealPart() {
+    return a;
+  }
+  //return the imaginary part of a complex number
+  public double getImaginaryPart(){
+    return b;
+  }
+  //turns it into string
+  @Override
+  public String toString(){
+    return (b==0? "" + a : a + " + " + b + "i"); //returns string, if b = 0 returns just "a"
+  }
+  //implements these because they are abstract in parent class, changes abs value to different types
+  @Override
+  public int intValue(){
+    return (int) Complex.abs(new Complex(getA(),getB()));
+  }
+  @Override
+  public double doubleValue(){
+    return (double) Complex.abs(new Complex(getA(),getB()));
+  }
+  @Override
+  public  float floatValue(){
+    return (float) Complex.abs(new Complex(getA(),getB()));
+  }
+  @Override
+  public long longValue(){
+    return (long) Complex.abs(new Complex(getA(),getB()));
+  }
+  //overrides compareTo method from Comparable and compares the abs value
+  @Override
+  public int compareTo(Complex o){
+    if (Complex.abs(new Complex(getA(),getB())) > Complex.abs(o))
+      return 1;
+    else if (Complex.abs(new Complex(getA(),getB())) < Complex.abs(o))
+      return -1;
+    else 
+      return 0;
+  }
+  @Override
+  public Object clone(){
+    try{
+      return super.clone();
+    }
+    catch(CloneNotSupportedException ex){
+      return null;
+    }
   }
 
 }
